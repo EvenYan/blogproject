@@ -7,6 +7,7 @@ from django.shortcuts import render, get_object_or_404
 import markdown
 
 from blog.models import Post
+from comments.models import Comment
 from comments.forms import CommentForm
 
 
@@ -26,9 +27,11 @@ def detail(request, pk):
     #                               ])
     form = CommentForm()
     comment_list = post.comment_set.all()
+    comment_count = post.comment_set.count()
     context = {'post': post,
                'form': form,
-               'comment_list': comment_list
+               'comment_list': comment_list,
+               'comment_count': comment_count
                }
     return render(request, 'blog/detail.html', context)
 
