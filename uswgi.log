@@ -1,0 +1,101 @@
+*** Starting uWSGI 2.0.17 (64bit) on [Fri Jul 20 17:27:57 2018] ***
+compiled with version: 4.8.2 20131212 (Red Hat 4.8.2-8) on 09 April 2018 06:14:45
+os: Linux-2.6.32-042stab127.2 #1 SMP Thu Jan 4 16:41:44 MSK 2018
+nodename: localhost.localdomain
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /usr/Even/projects/blogproject
+writing pidfile to uwsgi.pid
+detected binary path: /usr/Even/.virtualenvs/django/bin/uwsgi
+chdir() to /usr/Even/projects/blogproject
+your processes number limit is 1024
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 45.62.126.57:8080 fd 3
+Python version: 3.6.1 (default, Apr 14 2017, 22:28:18)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-17)]
+Python main interpreter initialized at 0x208d290
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x208d290 pid: 14168 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 14168)
+spawned uWSGI worker 1 (pid: 14190, cores: 2)
+spawned uWSGI worker 2 (pid: 14191, cores: 2)
+spawned uWSGI worker 3 (pid: 14192, cores: 2)
+spawned uWSGI worker 4 (pid: 14193, cores: 2)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.17 (64bit) on [Fri Jul 20 17:28:18 2018] ***
+compiled with version: 4.8.2 20131212 (Red Hat 4.8.2-8) on 09 April 2018 06:14:45
+os: Linux-2.6.32-042stab127.2 #1 SMP Thu Jan 4 16:41:44 MSK 2018
+nodename: localhost.localdomain
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /usr/Even/projects/blogproject
+writing pidfile to uwsgi.pid
+detected binary path: /usr/Even/.virtualenvs/django/bin/uwsgi
+chdir() to /usr/Even/projects/blogproject
+your processes number limit is 1024
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 45.62.126.57:8080 fd 3
+Python version: 3.6.1 (default, Apr 14 2017, 22:28:18)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-17)]
+Python main interpreter initialized at 0x106a290
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x106a290 pid: 14230 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 14230)
+spawned uWSGI worker 1 (pid: 14253, cores: 2)
+spawned uWSGI worker 2 (pid: 14254, cores: 2)
+spawned uWSGI worker 3 (pid: 14255, cores: 2)
+spawned uWSGI worker 4 (pid: 14256, cores: 2)
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+[pid: 14253|app: 0|req: 1/1] 198.35.46.201 () {28 vars in 312 bytes} [Fri Jul 20 17:40:31 2018] GET / => generated 8703 bytes in 70 msecs (HTTP/1.0 200) 3 headers in 110 bytes (1 switches on core 1)
+*** Starting uWSGI 2.0.17 (64bit) on [Fri Jul 20 18:04:29 2018] ***
+compiled with version: 4.8.2 20131212 (Red Hat 4.8.2-8) on 09 April 2018 06:14:45
+os: Linux-2.6.32-042stab127.2 #1 SMP Thu Jan 4 16:41:44 MSK 2018
+nodename: localhost.localdomain
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /usr/Even/projects/blogproject
+writing pidfile to uwsgi.pid
+detected binary path: /usr/Even/.virtualenvs/django/bin/uwsgi
+chdir() to /usr/Even/projects/blogproject
+your processes number limit is 1024
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (45.62.126.57:8080).
+bind(): Address already in use [core/socket.c line 769]
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+[pid: 14253|app: 0|req: 2/2] 113.92.95.186 () {42 vars in 691 bytes} [Fri Jul 20 18:04:58 2018] GET / => generated 8703 bytes in 9 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 14253|app: 0|req: 3/3] 113.92.95.186 () {42 vars in 676 bytes} [Fri Jul 20 18:05:01 2018] GET /favicon.ico => generated 85 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 14256|app: 0|req: 1/4] 113.92.95.186 () {44 vars in 722 bytes} [Fri Jul 20 18:05:07 2018] GET / => generated 8703 bytes in 76 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 14253|app: 0|req: 4/5] 113.92.95.186 () {44 vars in 722 bytes} [Fri Jul 20 18:06:15 2018] GET / => generated 8703 bytes in 9 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 1)
