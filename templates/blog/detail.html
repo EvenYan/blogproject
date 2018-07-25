@@ -2,7 +2,7 @@
 
 {% block main %}
     <main class="col-md-8">
-        <article class="post post-1">
+        <article class="post post-{{ post.pk }}">
             <header class="entry-header">
                 <h1 class="entry-title">{{ post.title }}</h1>
                 <div class="entry-meta">
@@ -16,6 +16,15 @@
             </header>
             <div class="entry-content clearfix">
                {{ post.body|safe }}
+                <div class="widget-tag-cloud">
+                    <ul>
+                        标签：
+                        {% for tag in post.tags.all %}
+                            <li><a href="{% url 'blog:tag' tag.pk %}"># {{ tag.name }}</a></li>
+                        {% endfor %}
+
+                    </ul>
+                </div>
             </div>
         </article>
         <section class="comment-area" id="comment-area">

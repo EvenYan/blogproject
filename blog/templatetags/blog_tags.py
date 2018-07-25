@@ -1,4 +1,6 @@
-from blog.models import Post, Category
+from django.db.models import Count
+
+from blog.models import Post, Category, Tag
 from django import template
 
 
@@ -17,4 +19,10 @@ def archive():
 
 @register.simple_tag
 def get_category():
-    return Category.objects.all()
+    return Category.objects.annotate(num_posts=Count('post')).filter(num_posts__gt=0)
+    # return Category.objects.all()
+
+
+@register.simple_tag
+def get_tag():
+    return Tag.objects.annotate(num_posts=Count('post')).filter(num_posts__gt=0)
