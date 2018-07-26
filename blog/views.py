@@ -5,7 +5,9 @@ from django.shortcuts import render, get_object_or_404
 
 # Create your views here.
 import markdown
+from django.utils.text import slugify
 from django.views.generic import ListView, DetailView
+from markdown.extensions.toc import TocExtension
 
 from blog.models import Post, Category, Tag
 from comments.models import Comment
@@ -143,7 +145,8 @@ class PostDetailView(DetailView):
         md = markdown.Markdown(extensions=[
                                           'markdown.extensions.extra',
                                           'markdown.extensions.codehilite',
-                                          'markdown.extensions.toc',
+                                          TocExtension(slugify=slugify),
+                                          # 'markdown.extensions.toc',
                                       ])
         print(post.body)
         post.body = md.convert(post.body)
