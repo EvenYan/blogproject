@@ -198,3 +198,8 @@ class TagView(ListView):
     def get_queryset(self):
         tag = get_object_or_404(Tag, pk=self.kwargs.get('pk'))
         return super().get_queryset().filter(tags=tag)
+
+
+def upload_image(request):
+    file = request.FILES()
+    return None

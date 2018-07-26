@@ -16,6 +16,7 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 
+from blog import views
 from blog.feeds import AllPostRssFeed
 
 urlpatterns = [
@@ -23,5 +24,6 @@ urlpatterns = [
     url(r'', include('blog.urls', namespace='blog')),
     url(r'', include('comments.urls', namespace='comments')),
     url(r'^all/rss/$', AllPostRssFeed(), name='rss'),
+    url(r'^upload_img/$', views.upload_image, name='uploadimage'),
 
 ]
