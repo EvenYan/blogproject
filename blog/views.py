@@ -190,8 +190,8 @@ class ArchiveView(ListView):
     def get_queryset(self):
         year = self.kwargs.get('year')
         month = self.kwargs.get('month')
-        return super(ArchiveView, self).get_queryset().filter(create_time__year=year, create_time__month=month)
-
+#        return super(ArchiveView, self).get_queryset().filter(create_time__year=year, create_time__month=month)
+        return super().get_queryset().filter(Q(create_time__gt=datetime.date(2018, int(month), 1))&Q(create_time__lt=datetime.date(2018, int(month)+1,1)))
 
 class TagView(ListView):
     model = Post
