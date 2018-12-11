@@ -148,12 +148,12 @@ class PostDetailView(DetailView):
                                           TocExtension(slugify=slugify),
                                           # 'markdown.extensions.toc',
                                       ])
-        print(post.body)
+        # print(post.body)
         post.body = md.convert(post.body)
-        print('---'*40)
-        print(post.body)
+        # print('---'*40)
+        # print(post.body)
         post.toc = md.toc
-        print(post.toc)
+        # print(post.toc)
         return post
 
     def get_context_data(self, **kwargs):
