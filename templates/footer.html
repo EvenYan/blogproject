@@ -1,0 +1,38 @@
+{% load staticfiles %}
+  <footer role="contentinfo" class="navbar-inverse">
+      <div class="container">
+          <div class="row">
+              <div class="left col-md-7">
+                  <ul class="links">
+                      <li>
+                          <span class="message">Hello from Even.</span>
+                      </li>
+                      <li>
+                          <a href="https://github.com/EvenYan" target="_blank" aria-hidden="true" role="button" tabindex="0">Follow @code</a>
+                      </li>
+                      <li>
+                          <div class="github-star-button">
+
+                              <iframe title="GitHub star button" src="{% static 'src/github-btn.html' %}" frameborder="0" scrolling="0" width="130px" height="20px">
+                              </iframe>
+                          </div>
+                      </li>
+
+
+                  </ul>
+              </div>
+              <div class="right col-md-5">
+                  <ul class="links">
+                      <li><a id="footer-support-link" href="#" target="_blank">Support</a></li>
+                      <li><a id="footer-privacy-link" href="#" target="_blank">Privacy</a></li>
+                      <li><a id="footer-terms-link" href="#" target="_blank">Terms of Use</a></li>
+                      <li><a id="footer-license-link" href="#">License</a></li>
+                  </ul>
+                  <div class="copyright">
+                      <span>My Blog © 2018 <span>Even</span>
+                      </span>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>

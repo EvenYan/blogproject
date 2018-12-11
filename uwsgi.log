@@ -35455,3 +35455,29 @@ spawned uWSGI worker 1 (pid: 7938, cores: 2)
 spawned uWSGI worker 2 (pid: 7939, cores: 2)
 spawned uWSGI worker 3 (pid: 7940, cores: 2)
 spawned uWSGI worker 4 (pid: 7941, cores: 2)
+*** Starting uWSGI 2.0.17 (64bit) on [Tue Dec 11 14:34:15 2018] ***
+compiled with version: 7.3.0 on 11 December 2018 06:32:47
+os: Linux-4.15.0-39-generic #42-Ubuntu SMP Tue Oct 23 15:48:01 UTC 2018
+nodename: even-virtual-machine
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /home/even/PycharmProjects/blog/blogproject
+writing pidfile to uwsgi.pid
+detected binary path: /home/even/.virtualenvs/blog/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /usr/Even/projects/blogproject
+chdir(): No such file or directory [core/uwsgi.c line 2629]
+*** Starting uWSGI 2.0.17 (64bit) on [Tue Dec 11 14:35:43 2018] ***
+compiled with version: 7.3.0 on 11 December 2018 06:32:47
+os: Linux-4.15.0-39-generic #42-Ubuntu SMP Tue Oct 23 15:48:01 UTC 2018
+nodename: even-virtual-machine
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /home/even/PycharmProjects/blog/blogproject
+writing pidfile to uwsgi.pid
+detected binary path: /home/even/.virtualenvs/blog/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /usr/Even/projects/blogproject
+chdir(): No such file or directory [core/uwsgi.c line 2629]
