@@ -15,8 +15,8 @@
                 <ul class="nav navbar-nav navbar-left">
                     <li><a id="nav-docs" href="{% url 'blog:index' %}">首页</a></li>
                     <li><a id="nav-updates" href="{% url 'blog:index' %}">博客</a></li>
-                    <li><a id="nav-blogs" href="#">关于</a></li>
-                    <li><a id="nav-community" href="#">联系</a></li>
+                    <li><a id="nav-blogs" href="{% url 'blog:about' %}">关于</a></li>
+                    <li><a id="nav-community" href="{% url 'blog:contact' %}">联系</a></li>
                     <li><a href="#" target="_blank" id="nav-extensions">其他</a></li>
                     <li><a id="nav-faqs" href="#">FAQ</a></li>
                     <li class="visible-xs"><a href="#" target="_blank">GitHub Project</a></li>
