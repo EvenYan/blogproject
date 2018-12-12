@@ -137,14 +137,5 @@
 {% include 'footer.html' %}
 <script src="js/script.js"></script>
 <script src="{% static 'blog/js/script.js' %}"></script>
-<script>
-    $(function () {
-        $("#nav-index-li").click(function () {
-            alert("Hello")
-            $(this).sibling('li').removeClass('active');
-            $(this).addClass('active');
-        })
-    })
-</script>
 </body>
 </html>
