@@ -191,7 +191,11 @@ class ArchiveView(ListView):
         year = self.kwargs.get('year')
         month = self.kwargs.get('month')
 #        return super(ArchiveView, self).get_queryset().filter(create_time__year=year, create_time__month=month)
-        return super().get_queryset().filter(Q(create_time__gt=datetime.date(2018, int(month), 1))&Q(create_time__lt=datetime.date(2018, int(month)+1,1)))
+
+        # lt_time的目的是防止月份超过12月
+        lt_time = int(month)+1 if int(month)<12 else 12
+        return super().get_queryset().filter(Q(create_time__gt=datetime.date(int(year), int(month), 1))&Q(create_time__lt=datetime.date(int(year), lt_time,1)))
+
 
 class TagView(ListView):
     model = Post
@@ -222,3 +226,7 @@ def about(request):
 
 def contact(request):
     return render(request, 'blog/contact.html')
+
+
+def new_search(request):
+    return render(request, 'blog/new_search.html')

@@ -1,0 +1,25 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Page not found</title>
+
+    <link rel="stylesheet" href="{% static 'blog/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'blog/css/style.css' %}">
+
+<body class="errors">
+  <div class="container">
+    <img class="graphic notfound" src="{% static 'src/404.png' %}">
+<h1>Sorry!</h1>
+<h2>It seems the page can't be found</h2>
+    <div class="support">
+      <a href="https://www.evenyan.com/">Home</a>
+      <a href="https://www.github.com.com/EvenYan/MyBlogs/issues">Report an issue</a>
+      <a href="http://twitter.com/code">@code</a>
+    </div>
+  </div>
+</body>
+</html>

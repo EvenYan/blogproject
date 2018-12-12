@@ -4,6 +4,7 @@
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Django &amp; 小窝</title>
 
 
@@ -14,7 +15,7 @@
     <link rel="stylesheet" href="{% static 'blog/css/highlights/github.css' %}">
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="{% static 'blog/css/pace.css' %}">
-{#    <link rel="stylesheet" href="{% static 'blog/css/custom.css' %}">#}
+    <link rel="stylesheet" href="{% static 'blog/css/custom.css' %}">
 
 
     {#导入代码高亮提示样式#}
@@ -83,17 +84,6 @@
                         暂无文章
                     {% endfor %}
                     </ul>
-                    <ul>
-                        <li>
-                            <a href="#">Django 博客开发入门教程：前言</a>
-                        </li>
-                        <li>
-                            <a href="#">Django 博客使用 Markdown 自动生成文章目录</a>
-                        </li>
-                        <li>
-                            <a href="#">部署 Django 博客</a>
-                        </li>
-                    </ul>
                 </div>
                 <div class="widget widget-archives">
                     <h3 class="widget-title">归档</h3>
@@ -106,17 +96,6 @@
                         {% empty %}
                         暂无归档
                     {% endfor %}
-                    </ul>
-                    <ul>
-                        <li>
-                            <a href="#">2017 年 5 月</a>
-                        </li>
-                        <li>
-                            <a href="#">2017 年 4 月</a>
-                        </li>
-                        <li>
-                            <a href="#">2017 年 3 月</a>
-                        </li>
                     </ul>
                 </div>
 
@@ -132,15 +111,6 @@
                             暂无分类
                         {% endfor %}
                     </ul>
-                        <li>
-                            <a href="#">Django 博客教程 <span class="post-count">(13)</span></a>
-                        </li>
-                        <li>
-                            <a href="#">Python 教程 <span class="post-count">(11)</span></a>
-                        </li>
-                        <li>
-                            <a href="#">Django 用户认证 <span class="post-count">(8)</span></a>
-                        </li>
                 </div>
 
                 <div class="widget widget-tag-cloud">
@@ -156,38 +126,6 @@
                         {% endfor %}
 
                     </ul>
-                    <ul>
-                        <li>
-                            <a href="#">Django</a>
-                        </li>
-                        <li>
-                            <a href="#">Python</a>
-                        </li>
-                        <li>
-                            <a href="#">Java</a>
-                        </li>
-                        <li>
-                            <a href="#">笔记</a>
-                        </li>
-                        <li>
-                            <a href="#">文档</a>
-                        </li>
-                        <li>
-                            <a href="#">AngularJS</a>
-                        </li>
-                        <li>
-                            <a href="#">CSS</a>
-                        </li>
-                        <li>
-                            <a href="#">JavaScript</a>
-                        </li>
-                        <li>
-                            <a href="#">Snippet</a>
-                        </li>
-                        <li>
-                            <a href="#">jQuery</a>
-                        </li>
-                    </ul>
                 </div>
                 <div class="rss">
                     <a href="{% url 'rss' %}"><span class="ion-social-rss-outline"></span> RSS 订阅</a>
@@ -199,5 +137,14 @@
 {% include 'footer.html' %}
 <script src="js/script.js"></script>
 <script src="{% static 'blog/js/script.js' %}"></script>
+<script>
+    $(function () {
+        $("#nav-index-li").click(function () {
+            alert("Hello")
+            $(this).sibling('li').removeClass('active');
+            $(this).addClass('active');
+        })
+    })
+</script>
 </body>
 </html>

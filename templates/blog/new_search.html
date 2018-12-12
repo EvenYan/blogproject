@@ -1,0 +1,67 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django &amp; 小窝</title>
+
+    <!-- meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- css -->
+    <link rel="stylesheet" href="{% static 'blog/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'blog/css/ionicons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'blog/css/pace.css' %}">
+    <link rel="stylesheet" href="{% static 'blog/css/style.css' %}">
+
+    <!-- js -->
+    <script src="{% static 'blog/js/jquery-2.1.3.min.js' %}"></script>
+    <script src="{% static 'blog/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'blog/js/pace.min.js' %}"></script>
+    <script src="{% static 'blog/js/modernizr.custom.js' %}"></script>
+</head>
+
+<body class="win">
+
+  <div id="main" itemscope="" itemtype="http://schema.org/SoftwareApplication">
+          <a role="button" id="skip-to-content" class="link-button" href="#main-content">Skip to content<i>&nbsp;</i><span class="glyphicon glyphicon-menu-down"></span></a>
+          <div class="navbar navbar-inverse ">
+              {% include 'nav.html' %}
+          </div>          <div class="updates-banner  hide">
+              <div class="container">
+                  <p class="message"><a href="/updates" id="banner-link-updates">Version <span itemprop="softwareVersion">1.29</span></a> is now available! Read about the new features and fixes from October.</p>
+              </div>
+              <div tabindex="0" role="button" title="Dismiss this update" class="dismiss-btn" id="banner-dismiss-btn"><span class="sr-only">Dismiss this update</span><span aria-hidden="true" class="glyph-icon"></span></div>
+          </div>      <div role="main" id="main-content">
+
+<div class="container body-content search">
+  <h2>Search</h2>
+  <div class="row">
+    <div class="col-md-10">
+      <form id="search-form" class="search-form" action="{% url 'haystack_search' %}">
+        <div class="input-group">
+          <input type="text" name="q" id="q" class="search-box form-control" value="" placeholder="Search Blogs">
+          <span class="input-group-btn">
+            <button class="btn" type="submit">
+              <img width="16" height="16" src="{% static 'src/search_dark.svg' %}" alt="search submit">
+            </button>
+          </span>
+        </div>
+      </form>
+
+        <p>Enter a search term</p>
+
+    </div>
+  </div>
+</div>
+      </div>
+  </div>
+
+<div>
+    {% include 'footer.html' %}
+</div>
+</body>
+
+</html>

@@ -3,7 +3,7 @@
     <a role="button" id="skip-to-content" class="link-button"
        href="https://code.visualstudio.com/blogs/2018/12/04/rich-navigation#main-content">Skip to
         content<i>&nbsp;</i><span class="glyphicon glyphicon-menu-down"></span></a>
-    <div class="navbar navbar-inverse ">
+    <div class="navbar navbar-inverse">
         <nav role="navigation">
             <div class="container">
                 <div class="nav navbar-header">
@@ -17,19 +17,18 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-left">
-                        <li><a id="nav-docs" href="{% url 'blog:index' %}">首页</a></li>
-                        <li><a id="nav-updates" href="{% url 'blog:index' %}">博客</a></li>
-                        <li><a id="nav-blogs" href="{% url 'blog:about' %}">关于</a></li>
-                        <li><a id="nav-community" href="{% url 'blog:contact' %}">联系</a></li>
-                        <li><a href="#" target="_blank" id="nav-extensions">其他</a></li>
-                        <li><a id="nav-faqs" href="#">FAQ</a></li>
+                        <li id="nav-index-li" class=""><a id="nav-index" href="{% url 'blog:index' %}">首页</a></li>
+                        <li><a id="nav-about" href="{% url 'blog:about' %}">关于</a></li>
+                        <li><a id="nav-contact" href="{% url 'blog:contact' %}">联系</a></li>
+                        <li><a href="" target="_blank" id="nav-extensions">其他</a></li>
+                        <li><a id="nav-faqs" href="">FAQ</a></li>
                         <li class="visible-xs"><a href="#" target="_blank">GitHub Project</a></li>
-                        <li class="search visible-xs"><a href="#">Search</a></li>
+                        <li class="search visible-xs"><a href="{% url 'blog:new_search' %}">Search</a></li>
                     </ul>
 
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <a href="#" title="Search" class="btn search-btn" id="nav-search">
+                            <a href="{% url 'blog:new_search' %}" title="Search" class="btn search-btn" id="nav-search">
                                 <img class="search-icon"
                                      src="{% static 'src/search.svg' %}"
                                      width="16px" height="16px" alt="Search">
