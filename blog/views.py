@@ -1,6 +1,7 @@
 import datetime
 
 from django.db.models import Q
+from django.http import JsonResponse
 from django.shortcuts import render, get_object_or_404
 
 # Create your views here.
@@ -230,3 +231,26 @@ def contact(request):
 
 def new_search(request):
     return render(request, 'blog/new_search.html')
+
+
+def poem(request):
+    return render(request, 'blog/poem.html')
+
+
+def get_poem(request):
+    kw = request.GET.get("kw")
+    print(kw)
+    import os
+    from Chinese_poem_generator import main
+    from Chinese_poem_generator import config
+    print("开始作诗1")
+    trainData = main.data.POEMS(config.trainPoems)
+    print("开始作诗2")
+    MCPangHu = main.model.MODEL(trainData)
+    print("开始作诗3")
+    poems = MCPangHu.testHead(kw)
+    print(poems)
+    # os.system("workon blog")
+    # ret = os.popen("cd ~/Chinese_poem_generator;python main.py -m head -k %s" % kw)
+    # print(ret)
+    return JsonResponse({"kw": poems})

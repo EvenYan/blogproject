@@ -17,5 +17,7 @@ urlpatterns = [
     url(r'^contact/$', views.contact, name='contact'),
     url(r'^about/$', views.about, name='about'),
     url(r'^Search/$', views.new_search, name='new_search'),
+    url(r'^poem/$', views.poem, name='poem'),
+    url(r'^get_poem', views.get_poem, name='get_poem'),
 
 ]
