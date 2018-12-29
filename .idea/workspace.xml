@@ -1,34 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="945d6403-fa90-4a44-844e-78120c87f37b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Chinese_poem_generator/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chinese_poem_generator/.travis.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chinese_poem_generator/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chinese_poem_generator/checkpoints/poetrySong/checkpoint" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chinese_poem_generator/checkpoints/poetrySong/poem-157999.data-00000-of-00001" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chinese_poem_generator/checkpoints/poetrySong/poem-157999.index" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chinese_poem_generator/checkpoints/poetrySong/poem-157999.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chinese_poem_generator/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chinese_poem_generator/data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chinese_poem_generator/dataset/jsonToTxt.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chinese_poem_generator/dataset/poetry/divideTangSong.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chinese_poem_generator/dataset/poetrySong/poetrySong.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chinese_poem_generator/dataset/poetryTang/poetryTang.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chinese_poem_generator/dataset/shijing/shijing.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chinese_poem_generator/dataset/shijing/shijing.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chinese_poem_generator/dataset/songci/songci.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chinese_poem_generator/evaluate.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chinese_poem_generator/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chinese_poem_generator/model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/blog/poem.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/nav.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/whoosh_index/_MAIN_44.toc" beforeDir="false" />
-    </list>
+    <list default="true" id="945d6403-fa90-4a44-844e-78120c87f37b" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,18 +44,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blog/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog/views.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -95,11 +56,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="model.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="model.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Chinese_poem_generator/model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="170" selection-start-line="170" selection-end-line="170" />
+            <state relative-caret-position="242">
+              <caret line="172" lean-forward="true" selection-start-line="172" selection-end-line="172" />
             </state>
           </provider>
         </entry>
@@ -118,6 +79,18 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="128">
               <caret line="29" column="94" selection-start-line="29" selection-start-column="94" selection-end-line="29" selection-end-column="94" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/blogproject/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="89" column="17" selection-start-line="89" selection-start-column="17" selection-end-line="89" selection-end-column="17" />
+              <folding>
+                <element signature="e#315#324#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -412,8 +385,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="87" y="30" width="1829" height="974" extended-state="0" />
-    <editor active="true" />
+    <frame x="87" y="30" width="1829" height="974" extended-state="1" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50039715" side_tool="true" weight="0.32868218" />
@@ -421,8 +393,8 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49960285" visible="true" weight="0.44576877" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.09702748" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49960285" visible="true" weight="0.44576877" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09702748" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" weight="0.3292204" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -672,16 +644,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blogproject/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3344">
-          <caret line="89" column="17" selection-start-line="89" selection-start-column="17" selection-end-line="89" selection-end-column="17" />
-          <folding>
-            <element signature="e#315#324#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -797,8 +759,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Chinese_poem_generator/model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="170" selection-start-line="170" selection-end-line="170" />
+        <state relative-caret-position="242">
+          <caret line="172" lean-forward="true" selection-start-line="172" selection-end-line="172" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blogproject/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="89" column="17" selection-start-line="89" selection-start-column="17" selection-end-line="89" selection-end-column="17" />
+          <folding>
+            <element signature="e#315#324#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
