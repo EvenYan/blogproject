@@ -61,7 +61,7 @@ tensorboard==1.12.1
 tensorflow==1.12.0
 termcolor==1.1.0
 unicodecsv==0.14.1
-urllib3==1.23
+urllib3==1.26.5
 uWSGI==2.0.17
 vine==1.1.4
 Werkzeug==0.14.1
